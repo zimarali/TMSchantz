@@ -1,0 +1,19 @@
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.banner-container {
+  width: 1200px;
+  height: 400px;
+  margin-bottom: -15px;
+  background-image: url(/images/banner.jpg);
+}
+.name-place {
+  color: white;
+  padding-top: 120px;
+}
+.bD {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+}

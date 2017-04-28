@@ -4,33 +4,51 @@
 <head>
     <title>TM Schantz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
-    <body ng-app="artPage">
-      <div class="row">
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="theNav">
-              <ul class="nav navbar-nav">
-                <li><a href="#/"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="#/images">Images</a></li>
-                <!-- <li><a href="#/about">About Me</a></li>
-                <li><a href="#/contact">Contact Me</a></li> -->
-              </ul>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="banner-container img-responsive">
+            <h1 class="text-center name-place"><span class="bD">Tim Schantz<span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class ="col-sm-12">
+            <div class="btn-group btn-group-md btn-group-justified">
+              <a href="#" class="btn btn-primary">Images</button></a>
+              <a href="#" class="btn btn-primary">About</button></a>
+              <a href="#" class="btn btn-primary">Contact</button></a>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
-      <ng-view></ng-view>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test1.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test2.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test3.png"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test1.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test2.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test3.png"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test1.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test2.png"></div>
+          <div class="col-sm-4"><img class="img-responsive text-center" src="/images/test3.png"></div>
+        </div>
+      </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
