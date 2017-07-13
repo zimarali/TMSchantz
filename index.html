@@ -5,6 +5,7 @@
     <title>TM Schantz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/33930d8d2f.js"></script>
     <link href="style.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -13,6 +14,7 @@
         <div class="row">
           <div class="topbar">
             <img class="img-responsive logo" src="images/logov1.png">
+            <!-- <button type="button" class="pageicons btn btn-info btn-lg" data-toggle="modal" data-target="#aModal">Artist</button> -->
           </div>
         </div>
       </div>
@@ -22,16 +24,36 @@
           </div>
         </div>
       </div>
+
+      <div id="aModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Name/Img here..</h4>
+      </div>
+      <div class="modal-body">
+        <p>Info about artist here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+
+      </div>
+    </div>
+
+
       <div class="container">
         <div id="main_area">
-                <!-- Slider -->
+
                 <div class="row">
                     <div class="col-xs-12" id="slider">
-                        <!-- Top part of the slider -->
+
                         <div class="row">
                             <div class="col-sm-8" id="carousel-bounding-box">
-                                <div class="carousel slide" id="myCarousel">
-                                    <!-- Carousel items -->
+                                <div class="carousel slide" id="artCarousel">
+
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
                                         <img src="http://placehold.it/770x300&text=one"></div>
@@ -50,11 +72,12 @@
 
                                         <div class="item" data-slide-number="5">
                                         <img src="http://placehold.it/770x300&text=six"></div>
-                                    </div><!-- Carousel nav -->
-                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    </div>
+
+                                    <a class="left carousel-control" href="#artCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
                                     </a>
-                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <a class="right carousel-control" href="#artCarousel" role="button" data-slide="next">
                                         <span class="glyphicon glyphicon-chevron-right"></span>
                                     </a>
                                     </div>
@@ -101,10 +124,11 @@
                             </div>
                         </div>
                     </div>
-                </div><!--/Slider-->
+                </div>
+
 
                 <div class="row hidden-xs" id="slider-thumbs">
-                        <!-- Bottom switcher of slider -->
+
                         <ul class="hide-bullets">
                             <li class="col-sm-2">
                                 <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
