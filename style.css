@@ -51,6 +51,6 @@ body {
   margin-left: -40px;
   margin-top: 20px;
 }
-.imgcenter {
-  margin: 0 auto;
+.imgrows {
+  padding-bottom: 5px;
 }
