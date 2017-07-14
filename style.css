@@ -52,5 +52,12 @@ body {
   margin-top: 20px;
 }
 .imgrows {
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.featuredpanel {
+  background-color: black;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
