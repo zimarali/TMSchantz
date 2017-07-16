@@ -2,14 +2,24 @@ body {
   background-image: url(./images/background.jpg);
   background-size: cover;
 }
+
 .logo {
   float: left;
 }
-.lightrender {
-  background-image: url(./images/lightrender.png);
-  height: 100px;
-  margin-top: -5px;
-  margin-bottom: 10px;
+.featured {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+.featurepanel {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+#sliderp {
+  margin: 0 auto;
+  width: 75%;
 }
 .pageicons {
   float: right;
@@ -27,7 +37,7 @@ body {
   background-image: url(./images/banner.jpg);
   background-size: cover;
   background-color: black;
-  /*width: 100%;*/
+  width: 100%;
   height: 100px;
 }
 .foot1 {
@@ -39,7 +49,10 @@ body {
   height: 75px;
 }
 .name-place {
+  z-index: 0;
   color: white;
+  position: absolute;
+  width: 100%;
 }
 .bD {
   border-style: solid;
@@ -53,13 +66,6 @@ body {
 }
 .imgrows {
   margin-bottom: 10px;
-}
-.featuredpanel {
-  background-color: black;
-  background-size: cover;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
 }
 
 .row > .column {

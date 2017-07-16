@@ -10,494 +10,484 @@
 
 </head>
     <body>
-      <div class="container-fluid">
         <div class="row">
           <div class="topbar">
             <img class="img-responsive logo" src="images/logov1.png">
-            <!-- <button type="button" class="pageicons btn btn-info btn-lg" data-toggle="modal" data-target="#aModal">Artist</button> -->
+                    <!-- <button type="button" class="pageicons btn btn-info btn-lg" data-toggle="modal" data-target="#aModal">Artist</button> -->
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="lightrender">
+
+        <div id="aModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Name/Img here..</h4>
+              </div>
+              <div class="modal-body">
+                <p>Info about artist here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div id="aModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Name/Img here..</h4>
-      </div>
-      <div class="modal-body">
-        <p>Info about artist here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-      </div>
+        <div class="featured">
+          <div id="sliderp">
+            <div class="row">
+                <div class="col-xs-12" id="slider">
 
-      </div>
-    </div>
+                    <div class="row">
+                        <div class="col-sm-8" id="carousel-bounding-box">
+                            <div class="carousel slide" id="artCarousel">
 
+                                <div class="carousel-inner">
+                                    <div class="active item" data-slide-number="0">
+                                    <img src="http://placehold.it/770x300&text=one"></div>
 
-      <div class="container featuredpanel">
-        <div id="main_area">
+                                    <div class="item" data-slide-number="1">
+                                    <img src="http://placehold.it/770x300&text=two"></div>
 
-                <div class="row">
-                    <div class="col-xs-12" id="slider">
+                                    <div class="item" data-slide-number="2">
+                                    <img src="http://placehold.it/770x300&text=three"></div>
 
-                        <div class="row">
-                            <div class="col-sm-8" id="carousel-bounding-box">
-                                <div class="carousel slide" id="artCarousel">
+                                    <div class="item" data-slide-number="3">
+                                    <img src="http://placehold.it/770x300&text=four"></div>
 
-                                    <div class="carousel-inner">
-                                        <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/770x300&text=one"></div>
+                                    <div class="item" data-slide-number="4">
+                                    <img src="http://placehold.it/770x300&text=five"></div>
 
-                                        <div class="item" data-slide-number="1">
-                                        <img src="http://placehold.it/770x300&text=two"></div>
+                                    <div class="item" data-slide-number="5">
+                                    <img src="http://placehold.it/770x300&text=six"></div>
+                                </div>
 
-                                        <div class="item" data-slide-number="2">
-                                        <img src="http://placehold.it/770x300&text=three"></div>
+                                <a class="left carousel-control" href="#artCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#artCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                                </div>
+                        </div>
 
-                                        <div class="item" data-slide-number="3">
-                                        <img src="http://placehold.it/770x300&text=four"></div>
+                        <div class="col-sm-4" id="carousel-text"></div>
 
-                                        <div class="item" data-slide-number="4">
-                                        <img src="http://placehold.it/770x300&text=five"></div>
-
-                                        <div class="item" data-slide-number="5">
-                                        <img src="http://placehold.it/770x300&text=six"></div>
-                                    </div>
-
-                                    <a class="left carousel-control" href="#artCarousel" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#artCarousel" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                    </div>
+                        <div id="slide-content" style="display: none;">
+                            <div id="slide-content-0">
+                                <h2>Slider One(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
                             </div>
 
-                            <div class="col-sm-4" id="carousel-text"></div>
+                            <div id="slide-content-1">
+                                <h2>Slider Two(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
+                            </div>
 
-                            <div id="slide-content" style="display: none;">
-                                <div id="slide-content-0">
-                                    <h2>Slider One(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
+                            <div id="slide-content-2">
+                                <h2>Slider Three(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
+                            </div>
 
-                                <div id="slide-content-1">
-                                    <h2>Slider Two(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
+                            <div id="slide-content-3">
+                                <h2>Slider Four(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
+                            </div>
 
-                                <div id="slide-content-2">
-                                    <h2>Slider Three(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
+                            <div id="slide-content-4">
+                                <h2>Slider Five(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
+                            </div>
 
-                                <div id="slide-content-3">
-                                    <h2>Slider Four(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
-
-                                <div id="slide-content-4">
-                                    <h2>Slider Five(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
-
-                                <div id="slide-content-5">
-                                    <h2>Slider Six(Name here)</h2>
-                                    <p>Info Here</p>
-                                    <p class="sub-text">More info here.</p>
-                                </div>
+                            <div id="slide-content-5">
+                                <h2>Slider Six(Name here)</h2>
+                                <p>Info Here</p>
+                                <p class="sub-text">More info here.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <div class="row hidden-xs" id="slider-thumbs">
+          <div class="row hidden-xs" id="slider-thumbs">
+            <ul class="hide-bullets">
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                </li>
 
-                        <ul class="hide-bullets">
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
-                            </li>
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
-                            </li>
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
-                            </li>
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
-                            </li>
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
-                            </li>
+                <li class="col-sm-2">
+                    <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+                </li>
+            </ul>
+          </div>
+          </div>
+          </div>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-                            </li>
-                        </ul>
-                </div>
-        </div>
-</div>
+          <div class="container">
+          <div class="row">
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(1)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(2)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(3)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(4)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(5)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(6)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(7)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(8)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(9)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(10)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(11)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(12)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(13)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(14)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(15)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(16)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(17)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(18)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(19)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(20)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(21)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(22)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(23)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          <div class="col-sm-2">
+            <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(24)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
+            <img class="img-responsive center-block imgrows" src="images/namepanel.png">
+          </div>
+          </div>
+          </div>
+          <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(1)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(2)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(3)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(4)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(5)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(6)"><img class="img-responsive" src="http://placehold.it/500x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(7)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(8)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(9)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(10)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(11)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(12)"><img class="img-responsive" src="http://placehold.it/600x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(13)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(14)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(15)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(16)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(17)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(18)"><img class="img-responsive" src="http://placehold.it/400x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(19)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(20)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(21)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(22)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(23)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-    <div class="col-sm-2">
-      <a class="img-thumbnail center-block hover-shadow" onclick="openModal();currentSlide(24)"><img class="img-responsive" src="http://placehold.it/200x200&text=img"></a>
-      <img class="img-responsive center-block imgrows" src="images/namepanel.png">
-    </div>
-  </div>
-</div>
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">3 /24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 /24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">5 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">6 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">7 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">8 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">9 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">10 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">11 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">12 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">13 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">13 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">14 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">14 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">15 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">15 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">16 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">16 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">17 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">17 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">18 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">18 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">19 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">19 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">20 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">20 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">21 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">21 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">22 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">22 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">23 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">23 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">24 / 24</div>
+              <img src="http://placehold.it/600x50&text=img" style="width:100%">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">24 / 24</div>
-        <img src="http://placehold.it/600x50&text=img" style="width:100%">
-    </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
 
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(1)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(1)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(2)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(2)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(3)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(3)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(4)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(4)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(5)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(5)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(6)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(6)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(7)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(7)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(8)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(8)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(9)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(9)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(10)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(10)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(11)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(11)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(12)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(12)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(13)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(13)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(14)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(14)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(15)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(15)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(16)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(16)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(17)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(17)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(18)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(18)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(19)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(19)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(20)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(20)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(21)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(21)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(22)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(22)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(23)" alt="Stuff">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(23)" alt="Stuff">
-    </div>
+          <div class="column">
+            <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(24)" alt="Stuff">
+          </div>
+          </div>
+          </div>
 
-    <div class="column">
-      <img class="demo" src="http://placehold.it/50x50&text=img" onclick="currentSlide(24)" alt="Stuff">
-    </div>
-  </div>
-</div>
+          <div class ="row">
+          <div class="container foot1 img-responsive">
+          <div class="col-sm-4"></div>
+          </div>
+          </div>
 
-<div class ="row">
-<div class="container foot1 img-responsive">
-    <div class="col-sm-4"></div>
-  </div>
-</div>
 
 
 
